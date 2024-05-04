@@ -16,8 +16,8 @@ stages {
 	echo "code from $(param.BRANCH) branch"
         sh ''' 
 		sleep 5
-                echo "Deploying to $(DEPLOY_ENV)" 
-	         echo "code from $(DEPLOY_BRANCH) branch"
+                echo Deploying to $(DEPLOY_ENV) 
+	         echo code from $(DEPLOY_BRANCH) branch
           
               
 	        exit 0 
