@@ -5,8 +5,8 @@ parameters {
        choice choices: ['main', 'master'], description: 'envirnoment for deployment of app', name: 'BRANCH'
     } 
  environment {
-	    DEPLOY_BRANCH = "$BRANCH"
-	    DEPLOY_ENV = "$ENV"
+	    DEPLOY_BRANCH = "$(BRANCH)"
+	    DEPLOY_ENV = "$(ENV)"
  }
 stages {
     stage ('BUILD') { 
