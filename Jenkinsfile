@@ -1,5 +1,5 @@
 pipeline {
-  agent anY
+  agent any
 parameters {
        string defaultValue: 'TEST', description: 'ENVIRONMENT FOR DEPLOY', name: 'ENV', trim: true
        choice choices: ['main', 'master'], description: 'envirnoment for deployment of app', name: 'BRANCH'
