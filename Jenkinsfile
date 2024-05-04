@@ -11,7 +11,7 @@ parameters {
 stages {
     stage ('BUILD') { 
       steps {
-        echo "Deploying to $(params.ENV)" 
+        echo " Deploying to $(params.ENV) " 
 	echo "code from $(params.BRANCH) branch"
         sh ''' 
 		sleep 5
